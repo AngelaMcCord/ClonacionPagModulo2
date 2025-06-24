@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", Tahoma, Verdana, sans-serif;
+}
+span {
+    font-weight: bold;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #8c1515;
+    color: white;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+}
+.white-icon{
+    color: white;
+}
+nav {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #323334;
+    color: white;
+    align-items: center;
+    padding: 30px 120px 30px 120px;
+}
+nav.header-items li {
+    list-style-type: none;
+}
+nav.header-items a {
+    color: white;
+    text-decoration: none;
+}
+nav.header-items a:hover {
+    color: #dad7cb;
+    text-decoration: underline;
+}
+#Sconnection {
+    color: white;
+    text-decoration: none;
+}
+#Sconnection:hover {
+    color: #dad7cb;
+    text-decoration: underline;
+}
+.Hero{
+    color: white;
+    background-image: url("./images/stanford-online-background-image.jpg.jfif");
+    background-color: rgba(0, 0, 0, 0.31416);
+    background-blend-mode:darken;
+}
+.card_main {
+    opacity: 1;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+.card_main:hover {
+    scale: 1.05;
+}
+.card_main h3{
+    color: #8c1515;
+    font-weight: bolder;
+}
+.card_main p{
+    color: black;
+    font-weight: lighter;
+}
+.card_main img{
+    width: 100%;
+}
+.card_main a{
+    text-decoration: none;
+}
+.desc_main{
+    padding: 20px;
+}
+.gallery_opc{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 40px 30px 40px 30px;
+}
+.search-section {
+    padding: 40px 30px 0px 30px;
+}
+.search-t{
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px 30px 0px 30px;
+    
+}
+.search-s input{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    width: 40%;
+    border-top: solid 2px #e3e1d8;
+    border-left: solid 2px #e3e1d8;
+    border-bottom: solid 2px #e3e1d8;
+    border-right: solid 0px white;
+    border-radius: 5px 0 0 5px;
+}
+.search-s .search_icono {
+    display: flex;
+    height: 75px;
+    width: 75px;
+    background-color: #8c1515;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-top: solid 2px #e3e1d8;
+    border-right: solid 2px #e3e1d8;
+    border-bottom: solid 2px #e3e1d8;
+    border-left: solid 0px white;
+    border-radius: 0 5px 5px 0;
+}
