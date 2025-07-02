@@ -70,6 +70,7 @@ nav.header-items a:hover {
 }
 .card_main img{
     width: 100%;
+    height: auto;
 }
 .card_main a{
     text-decoration: none;
@@ -127,4 +128,27 @@ nav.header-items a:hover {
     border-bottom: solid 2px #e3e1d8;
     border-left: solid 0px white;
     border-radius: 0 5px 5px 0;
+}
+#learn_more {
+    color: #8c1515;
+    text-decoration: none;
+}
+#learn_more:hover {
+    text-decoration: underline;
+}
+.credentials_card h2{
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+}
+.credentials_card a{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+}
+.credentials_card img{
+    background-color: #ffffff;
+    width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor */
+    max-width: 100%; /* Evita que la imagen se haga más grande que su tamaño original */
+    height: auto;
 }
