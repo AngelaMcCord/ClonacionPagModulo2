@@ -164,3 +164,31 @@ nav.header-items a:hover {
     display: flex;
     justify-content: center;
 }
+
+footer {
+display: flex;
+background-color: #8c1515;
+color: #f7f7f7;
+list-style-type: none;
+padding: 30px;
+align-items: center;
+}
+footer .info_footer{
+display: flex;
+flex-direction:column;
+padding: 20px;
+align-content: space-between;
+}
+footer .info_footer a{
+text-decoration: none;
+color: #f7f7f7;
+}
+footer .info_footer .info_foot1, footer .info_footer .info_foot2, footer .info_footer .info_foot3{
+display: flex;
+flex-direction:row;
+text-decoration: none;
+list-style-type: none;
+gap: 50px;
+align-content: space-around;
+padding: 10px;
+}
