@@ -51,14 +51,19 @@ nav.header-items a:hover {
     background-image: url("./images/stanford-online-background-image.jpg.jfif");
     background-color: rgba(0, 0, 0, 0.31416);
     background-blend-mode:darken;
+    background-size: cover;
 }
 .card_main {
     opacity: 1;
     background-color: rgb(255, 255, 255);
     margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .card_main:hover {
-    scale: 1.05;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 .card_main h3{
     color: #8c1515;
@@ -71,6 +76,8 @@ nav.header-items a:hover {
 .card_main img{
     width: 100%;
     height: auto;
+    object-fit: cover;
+    
 }
 .card_main a{
     text-decoration: none;
@@ -129,6 +136,7 @@ nav.header-items a:hover {
     border-left: solid 0px white;
     border-radius: 0 5px 5px 0;
 }
+/* Sección "Standford Credentials" */
 #learn_more {
     color: #8c1515;
     text-decoration: none;
@@ -136,27 +144,28 @@ nav.header-items a:hover {
 #learn_more:hover {
     text-decoration: underline;
 }
-.credentials_card h2, .feat_courses h2{
+.credentials_card h2, .feat_courses h2, .feat_programs h2{
     display: flex;
     justify-content: center;
     padding: 4%;
     margin-bottom: -20px ;
 }
-.credentials_card a, .feat_courses a{
+#learn_more{
     display: flex;
-    justify-content: flex-end;
-    padding: 1%;
+    justify-content: end;
+    padding: 2rem;
 }
 .credentials_card img{
     background-color: #ffffff;
-    width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor */
-    max-width: 100%; /* Evita que la imagen se haga más grande que su tamaño original */
+    width: 100%;
+    max-width: 100%;
     height: auto;
 }
-.feat_courses {
+/* Sección "Featured Courses" y "Featured Programs"*/
+.feat_courses , .feat_programs{
     background-color: #F4F4F4;
 }
-.feat_courses .bar{
+.bar{
     width: 100px;
     height: 6px;
     border-radius: 3px;
@@ -164,31 +173,106 @@ nav.header-items a:hover {
     display: flex;
     justify-content: center;
 }
+.gallery_fcourses , .gallery_fprograms{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1,fr;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #f8f8f8;
+}
 
+.gallery_fcourses .card_fcourses , .gallery_fprograms .card_fprograms {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-content: stretch;
+    color:inherit;
+    background: white;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card_fcourses:hover,  .card_fprograms:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+.card_fcourses img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.desc_course {
+    padding: 1rem;
+}
+.card_fcourses h3 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+    color: black;
+}
+.code {
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+    color: #4d4f53;
+}
+.school {
+    font-weight: bold;
+    color: #8c1515;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+.icon-suitcase {
+    font-weight: bold;
+    color: #8c1515;
+    margin-bottom: 0.5rem;
+}
+.details {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: #4d4f53;
+}
+.season {
+    color: #4d4f53;
+    font-weight: light;
+}
+.enroll {
+    color: #8c1515;
+    font-weight: lighter;
+}
+/* Sección "Featured Programs" */
+.desc_program {
+    padding: 1rem;
+}
+.card_fprograms h3 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+    color: black;
+}
+/* Sección Footer */
 footer {
-display: flex;
-background-color: #8c1515;
-color: #f7f7f7;
-list-style-type: none;
-padding: 30px;
-align-items: center;
+    display: flex;
+    background-color: #8c1515;
+    color: #f7f7f7;
+    list-style-type: none;
+    padding: 30px;
+    align-items: center;
 }
 footer .info_footer{
-display: flex;
-flex-direction:column;
-padding: 20px;
-align-content: space-between;
+    display: flex;
+    flex-direction:column;
+    padding: 20px;
+    align-content: space-between;
 }
 footer .info_footer a{
-text-decoration: none;
-color: #f7f7f7;
+    text-decoration: none;
+    color: #f7f7f7;
 }
 footer .info_footer .info_foot1, footer .info_footer .info_foot2, footer .info_footer .info_foot3{
-display: flex;
-flex-direction:row;
-text-decoration: none;
-list-style-type: none;
-gap: 50px;
-align-content: space-around;
-padding: 10px;
+    display: flex;
+    flex-direction:row;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 50px;
+    align-content: space-around;
+    padding: 10px;
 }
