@@ -6,14 +6,17 @@
     <title>Stendford HOME</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <div>
         <h1>
-          <span style="font-weight: lighter">Stendford</span>
+          <span style="font-weight: 500">Stendford</span>
           |
-          <span style="font-weight: 100; font-size: 16px;">ONLINE</span>
+          <span style="font-weight: 400; font-size: 16px;">ONLINE</span>
         </h1>
       </div>
 
@@ -29,6 +32,7 @@
     </header>
 
     <nav class="header-items">
+      <a class="h-none" href="https://online.stanford.edu/explore"><li><i class="fas fa-search"></i> Explore</li></a>
       <a class="h-none" href="https://online.stanford.edu/topics"><li>Topics <i class="fas fa-chevron-down"></i></li></a>
       <a class="h-none" href="https://online.stanford.edu/courses-and-programs"><li>Programs <i class="fas fa-chevron-down"></i></li></a>
       <a class="h-none" href="https://online.stanford.edu/free-content"><li>Free Content <i class="fas fa-chevron-down"></i></li></a>
@@ -261,7 +265,7 @@
           <img src="/images/Paul-Ditiangkin-profile-photo_0.jpg"
             alt="user_photo"/>
           <div class="student_desc">
-            <span class="student_name"><strong>Paul Ditiangkin</strong></span>
+            <span class="student_name">Paul Ditiangkin</span>
             <p class="student_rol">Supply Chain Product Manager, Google</p>
             <span class="student_major">MASTER'S DEGREE IN MATERIALS SCIENCE AND ENGINEERING</span>
           </div>
@@ -278,7 +282,7 @@
       <section class="Upcoming_Events px-4">
         <h2>Upcoming Events</h2>
         <div class="bar" style="display: flex; justify-self: center"></div>
-        <a id="learn_more" href="https://online.stanford.edu/events">
+        <a class="learn_more2" id="learn_more" href="https://online.stanford.edu/events">
           <h4>MORE EVENTS <i class="fas fa-chevron-right"></i></h4>
         </a>
         <div class="cardevent_container">
@@ -291,9 +295,11 @@
                 </p>
               </div>
               <div class="event_image">
-                <img
+                <figure>
+                  <img
                   src="./images/460x259_Making-GenAI-Useful_LP-tile.jpg"
                   alt="eventimage"/>
+                </figure>
               </div>
             </div>
             <div class="summary">
@@ -344,7 +350,7 @@
           <a href=""><li>Accesibility</li></a>
         </div>
         <div class="info_foot3">
-          <li>©Copyright Stanford University. Stanford, California 94305.</li>
+          <li>© Stanford University. Stanford, California 94305.</li>
         </div>
       </div>
     </footer>
