@@ -20,12 +20,13 @@ Replicar visualmente el diseño de una página real para entender mejor cómo es
 ## 🧠 Lo que practiqué
 
 - Jerarquía visual y etiquetas semánticas
-- Uso de Flexbox
+- Uso de Flexbox y Grid
 - Organización de código CSS
-- Clases reutilizables
-- Responsive Design básico (aún aprendiendo)
+- Clases reutilizables y ID
+- Responsive Design
+- Google fonts (Fuentes de texto)
+- FontAwesome (iconos)
 
 ## 🚀 Estado
 
-✅ Proyecto en proceso.  
-🔍 Próximo pasos: Seguir aplicando mejoras conforme a mi aprendizaje
+✅ Proyecto FINALIZADO.
